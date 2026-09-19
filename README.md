@@ -1,4 +1,4 @@
-# RiskLens (OwLance)
+# OwLance
 
 **AI-Powered Continuous Cyber Risk Quantification and Investment Optimization Platform**
 SIH26105 · AICTE · Theme: Blockchain & Cybersecurity
