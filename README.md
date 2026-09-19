@@ -3,10 +3,10 @@
 **AI-Powered Continuous Cyber Risk Quantification and Investment Optimization Platform**
 SIH26105 · AICTE · Theme: Blockchain & Cybersecurity
 
-![Python](https://img.shields.io/badge/python-3.13-blue.svg)
-![FastAPI](https://img.shields.io/badge/backend-FastAPI-009688.svg)
-![React](https://img.shields.io/badge/frontend-React%20%2B%20Vite-61DAFB.svg)
-![Status](https://img.shields.io/badge/status-hackathon%20prototype-orange.svg)
+![Python](https://img.shields.io/badge/Python-3.13-4B8BBE?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/Backend-FastAPI-7A4FE0?style=flat-square&logo=fastapi&logoColor=white)
+![React](https://img.shields.io/badge/Frontend-React%20%2B%20Vite-0FA3A3?style=flat-square&logo=react&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Hackathon%20Prototype-B4234B?style=flat-square)
 
 ---
 
@@ -24,18 +24,28 @@ Most cyber risk tools tell a business "Low / Medium / High" — which tells a CI
 or a small-business owner nothing about how much money is actually at stake.
 RiskLens gives budget-constrained organizations a transparent, auditable risk
 score benchmarked against real breach data, translated directly into rupee
-terms and a ranked, budget-aware action plan. The business also gets a shareable risk passport
- which can be used to communicate their security posture to banks and insurers .
-
-
+terms and a ranked, budget-aware action plan. The business also gets a
+shareable Risk Passport it can hand to a bank or insurer to prove its
+security posture — without exposing what's still open.
 
 📖 **[See the full step-by-step walkthrough with screenshots →](docs/WALKTHROUGH.md)**
 
 ---
 
+## 🛡️ The Risk Passport — why RiskLens is different
+
+![Risk Passport](docs/screenshots/08-risk-passport.png)
+*Most tools score a company secretly, for the vendor's own dashboard. The Risk
+Passport flips that: it's a shareable, verifiable proof of security posture —
+owned and controlled by the business itself, backed by a tamper-evident
+hash-chain, and deliverable straight to WhatsApp so an owner doesn't need to
+log into a dashboard to prove their posture to a bank, insurer, or client.
+This is the feature that turns a risk score into something the business can
+actually *use* — not just look at.*
+
+---
+
 ## What it looks like
-
-
 
 ![Consent](docs/screenshots/03-consent.png)
 *Consent-first by design: active scanning only runs after explicit, logged
@@ -46,8 +56,8 @@ authorization — every scan action is written to a tamper-evident audit log.*
 live from a real scan, not placeholder data.*
 
 ![Investment Optimizer](docs/screenshots/07-investment-optimizer.png)
-*The core differentiator: drag the budget slider and a greedy-ratio knapsack
-algorithm live-recalculates which fixes to prioritize, free fixes first.*
+*Drag the budget slider and a greedy-ratio knapsack algorithm live-recalculates
+which fixes to prioritize, free fixes first.*
 
 ![Causal Risk Graph (Simulated)](docs/screenshots/10-causal-risk-graph-simulated.png)
 *Attack-Path Collapse: Threat → Vulnerability → Asset → Identity → Control Gap
@@ -55,16 +65,16 @@ algorithm live-recalculates which fixes to prioritize, free fixes first.*
 external-only scan and densifies automatically as more data sources connect —
 one adaptive engine, not a separate SME/enterprise tier.*
 
-More screens — onboarding, live scanning, the vulnerability risk matrix, the
-Risk Passport, and the API docs — are in the
-**[full walkthrough](docs/WALKTHROUGH.md)**.
+More screens — onboarding, live scanning, the vulnerability risk matrix, and
+the API docs — are in the **[full walkthrough](docs/WALKTHROUGH.md)**.
 
 ---
 
 ## 🚀 Features
 
-- **Passive-first discovery** — subdomain and asset discovery via Certificate
-  Transparency logs and DNS, with zero setup and no authorization required
+- **Risk Passport** — a shareable, hash-chained proof of security posture,
+  owned by the business and deliverable straight to WhatsApp — our core
+  differentiator, see above
 - **Consent-first active scanning** — active checks run only after explicit,
   logged authorization; every scan action lands in a tamper-evident audit log
 - **Benchmark-driven risk scoring** — a 0–900 composite score and Expected
@@ -78,8 +88,8 @@ Risk Passport, and the API docs — are in the
 - **Investment optimizer** — greedy-ratio knapsack algorithm that
   live-recalculates which fixes to prioritize under a budget slider, always
   surfacing free fixes first, with ROSI per recommendation
-- **Risk Passport** — a shareable, hash-chained proof of security posture,
-  deliverable straight to WhatsApp
+- **Passive-first discovery** — subdomain and asset discovery via Certificate
+  Transparency logs and DNS, with zero setup and no authorization required
 - **REST API** — full FastAPI backend with auto-generated Swagger/ReDoc docs
 
 ---
@@ -151,9 +161,6 @@ frontend dependencies, and starts both servers. `backend/.env.example` seeds
 a demo account (`demo@owlance.in` / `owlance2026`) on first boot so a fresh
 clone is reachable with zero setup — the database falls back to SQLite
 automatically if PostgreSQL isn't configured.
-
----
-
 
 ---
 
