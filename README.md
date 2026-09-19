@@ -24,13 +24,22 @@ Most cyber risk tools tell a business "Low / Medium / High" — which tells a CI
 or a small-business owner nothing about how much money is actually at stake.
 RiskLens gives budget-constrained organizations a transparent, auditable risk
 score benchmarked against real breach data, translated directly into rupee
-terms and a ranked, budget-aware action plan.
+terms and a ranked, budget-aware action plan. The business also gets a shareable risk passport
+ which can be used to communicate their security posture to banks and insurers .
+
+
 
 📖 **[See the full step-by-step walkthrough with screenshots →](docs/WALKTHROUGH.md)**
 
 ---
 
 ## What it looks like
+
+
+
+![Consent](docs/screenshots/03-consent.png)
+*Consent-first by design: active scanning only runs after explicit, logged
+authorization — every scan action is written to a tamper-evident audit log.*
 
 ![Dashboard](docs/screenshots/05-dashboard.png)
 *One score (0–900), Expected Annual Loss, and potential savings — all computed
@@ -39,10 +48,6 @@ live from a real scan, not placeholder data.*
 ![Investment Optimizer](docs/screenshots/07-investment-optimizer.png)
 *The core differentiator: drag the budget slider and a greedy-ratio knapsack
 algorithm live-recalculates which fixes to prioritize, free fixes first.*
-
-![Consent](docs/screenshots/03-consent.png)
-*Consent-first by design: active scanning only runs after explicit, logged
-authorization — every scan action is written to a tamper-evident audit log.*
 
 ![Causal Risk Graph (Simulated)](docs/screenshots/10-causal-risk-graph-simulated.png)
 *Attack-Path Collapse: Threat → Vulnerability → Asset → Identity → Control Gap
@@ -149,60 +154,6 @@ automatically if PostgreSQL isn't configured.
 
 ---
 
-## 📊 API Endpoints
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/auth/register` | Create an account |
-| POST | `/auth/login` | Sign in |
-| GET | `/auth/me` | Current account |
-| GET | `/audit` | Tamper-evident audit log |
-| GET | `/audit/verify` | Verify audit log hash chain |
-| POST | `/consent` | Log explicit scan authorization |
-| GET | `/scan/{domain}` | Run a passive + active scan |
-| GET | `/connectors` | List connected data sources for a scan |
-| POST | `/connectors/{source_id}` | Connect a data source |
-| DELETE | `/connectors/{source_id}` | Disconnect a data source |
-| GET | `/analytics/{scan_id}` | Dashboard analytics for a scan |
-| POST | `/optimize` | Run the budget-constrained investment optimizer |
-| GET | `/whatsapp/status` | Risk Passport delivery status |
-| POST | `/whatsapp/send-passport` | Send the Risk Passport via WhatsApp |
-
-**Interactive API Documentation:**
-- Swagger UI: `http://127.0.0.1:8000/docs`
-- ReDoc: `http://127.0.0.1:8000/redoc`
-
----
-
-## 🧪 Testing
-
-```bash
-cd backend
-pytest -v
-```
-
-```bash
-# Frontend build + smoke test + graph-layout check
-npm run verify
-```
-
----
-
-## ⚙️ Configuration
-
-Copy `backend/.env.example` to `backend/.env` and customize:
-
-| Variable | Default | Description |
-|----------|---------|-------------|
-| `DATABASE_URL` | `sqlite:///./owlance.db` | Falls back to SQLite if Postgres is unreachable |
-| `SECRET_KEY` | auto-generated | Set a fixed value for anything deployed |
-| `SEED_DEMO_USER` | `true` | Seeds a demo account on first boot — set `false` before exposing publicly |
-| `MAX_SCAN_TARGETS` | 25 | Caps hostnames processed per scan |
-| `SCAN_DEADLINE_SECONDS` | 45.0 | Hard wall-clock deadline so the scan endpoint always returns |
-| `CACHE_TTL_HOURS` | 24 | Threat-intel cache lifetime |
-
-The root `.env.example` sets `VITE_API_URL` — point it at the deployed
-backend URL when hosting the frontend separately (e.g. on Vercel).
 
 ---
 
