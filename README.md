@@ -167,9 +167,27 @@ automatically if PostgreSQL isn't configured.
 
 ## 🔧 Tech Stack
 
-**Backend:** Python, FastAPI, PostgreSQL (SQLite fallback for local dev), SQLAlchemy, Pydantic
-**Frontend:** React, Vite, Tailwind CSS
-**Data sources:** crt.sh (Certificate Transparency), NVD, FIRST.org EPSS, CISA KEV
+## 🔧 Technology Stack
+
+### Backend
+
+- **FastAPI** — High-performance async web framework
+- **SQLAlchemy** — ORM for PostgreSQL (with automatic SQLite fallback for local dev)
+- **Pydantic** — Data validation and settings management
+- **PyJWT** — Session token signing for auth
+
+### Frontend
+
+- **React 19** — Component-based UI
+- **Vite** — Dev server and build tooling, zero-config
+- **Tailwind CSS** — Utility-first styling
+- **Recharts** — Dashboard charts (score build-up, risk trend, loss exceedance curve)
+
+### Data Sources
+
+- **crt.sh** — Certificate Transparency logs for passive subdomain discovery
+- **NVD** — CVE data for vulnerability scoring
+- **FIRST.org EPSS**
 
 ---
 
