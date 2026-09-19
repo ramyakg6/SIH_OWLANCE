@@ -67,9 +67,6 @@ actually *use* — not just look at.*
 
 ## 🚀 Features
 
-- **Risk Passport** — a shareable, hash-chained proof of security posture,
-  owned by the business and deliverable straight to WhatsApp — our core
-  differentiator, see above
 - **Consent-first active scanning** — active checks run only after explicit,
   logged authorization; every scan action lands in a tamper-evident audit log
 - **Benchmark-driven risk scoring** — a 0–900 composite score and Expected
@@ -87,6 +84,9 @@ actually *use* — not just look at.*
   ask "what's our highest financial risk today?" instead of reading a risk
   matrix; it only explains numbers the deterministic engine already
   computed, it never generates a score or a finding itself
+- **Risk Passport** — a shareable, hash-chained proof of security posture,
+  owned by the business and deliverable straight to WhatsApp — our core
+  differentiator, see above
 - **Passive-first discovery** — subdomain and asset discovery via Certificate
   Transparency logs and DNS, with zero setup and no authorization required
 - **REST API** — full FastAPI backend with auto-generated Swagger/ReDoc docs
