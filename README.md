@@ -3,10 +3,7 @@
 **AI-Powered Continuous Cyber Risk Quantification and Investment Optimization Platform**
 SIH26105 · AICTE · Theme: Blockchain & Cybersecurity
 
-![Python](https://img.shields.io/badge/Python-3.13-4B8BBE?style=&logoColor=white)
-![FastAPI](https://img.shields.io/badge/Backend-FastAPI-7A4FE0?style=&logo=fastapi&logoColor=white)
-![React](https://img.shields.io/badge/Frontend-React%20%2B%20Vite-0FA3A3?style=&logo=react&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Hackathon%20Prototype-B4234B?)
+
 
 ---
 
