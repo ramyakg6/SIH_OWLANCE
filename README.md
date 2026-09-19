@@ -1,4 +1,4 @@
-# RiskLens (OwLance)
+# OwLance
 
 **AI-Powered Continuous Cyber Risk Quantification and Investment Optimization Platform**
 SIH26105 · AICTE · Theme: Blockchain & Cybersecurity
@@ -53,7 +53,7 @@ one adaptive engine, not a separate SME/enterprise tier.*
 More screens — onboarding, live scanning, the vulnerability risk matrix, and
 the API docs — are in the **[full walkthrough](docs/WALKTHROUGH.md)**.
 
-# 🛡️ The Risk Passport — why RiskLens is different
+# 🛡️ The Risk Passport — why Owlance is different
 
 ![Risk Passport](docs/screenshots/08-risk-passport.png)
 *Most tools score a company secretly, for the vendor's own dashboard. The Risk
