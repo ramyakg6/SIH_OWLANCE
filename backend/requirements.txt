@@ -1,0 +1,37 @@
+# Version floors match what the test suite is verified against, with upper
+# bounds to stop a future major release breaking a fresh install. Exact pins
+# were avoided deliberately: pinning a version the suite has never run on
+# gives false confidence, and exact pins collide with distro-managed packages
+# when installed outside a virtualenv.
+
+# --- Web framework ---
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30,<1.0
+
+# --- Data validation / settings ---
+pydantic>=2.9,<3
+pydantic-settings>=2.5,<3
+
+# --- Persistence ---
+SQLAlchemy>=2.0,<2.1
+psycopg2-binary>=2.9,<3
+
+# --- External intelligence feeds ---
+httpx>=0.27,<1.0
+dnspython>=2.6,<3
+tenacity>=8.2,<10
+
+# --- Authentication ---
+bcrypt>=4.0,<6
+PyJWT>=2.7,<3
+email-validator>=2.0,<3
+
+# --- Connector ingest (file uploads, PDF policy parsing) ---
+python-multipart>=0.0.9
+pypdf>=5.0,<6
+
+# --- Config ---
+python-dotenv>=1.0,<2
+
+# --- Testing ---
+pytest>=8.0,<9
