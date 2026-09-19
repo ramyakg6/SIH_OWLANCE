@@ -3,11 +3,6 @@
 **AI-Powered Continuous Cyber Risk Quantification and Investment Optimization Platform**
 SIH26105 · AICTE · Theme: Blockchain & Cybersecurity
 
-![Python](https://img.shields.io/badge/Python-3.13-4B8BBE?style=flat-square&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/Backend-FastAPI-7A4FE0?style=flat-square&logo=fastapi&logoColor=white)
-![React](https://img.shields.io/badge/Frontend-React%20%2B%20Vite-0FA3A3?style=flat-square&logo=react&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Hackathon%20Prototype-B4234B?style=flat-square)
-
 ---
 
 ## 🔗 Live Demo
@@ -32,18 +27,6 @@ security posture — without exposing what's still open.
 
 ---
 
-## 🛡️ The Risk Passport — why RiskLens is different
-
-![Risk Passport](docs/screenshots/08-risk-passport.png)
-*Most tools score a company secretly, for the vendor's own dashboard. The Risk
-Passport flips that: it's a shareable, verifiable proof of security posture —
-owned and controlled by the business itself, backed by a tamper-evident
-hash-chain, and deliverable straight to WhatsApp so an owner doesn't need to
-log into a dashboard to prove their posture to a bank, insurer, or client.
-This is the feature that turns a risk score into something the business can
-actually *use* — not just look at.*
-
----
 
 ## What it looks like
 
@@ -68,6 +51,18 @@ one adaptive engine, not a separate SME/enterprise tier.*
 More screens — onboarding, live scanning, the vulnerability risk matrix, and
 the API docs — are in the **[full walkthrough](docs/WALKTHROUGH.md)**.
 
+## 🛡️ The Risk Passport — why RiskLens is different
+
+![Risk Passport](docs/screenshots/08-risk-passport.png)
+*Most tools score a company secretly, for the vendor's own dashboard. The Risk
+Passport flips that: it's a shareable, verifiable proof of security posture —
+owned and controlled by the business itself, backed by a tamper-evident
+hash-chain, and deliverable straight to WhatsApp so an owner doesn't need to
+log into a dashboard to prove their posture to a bank, insurer, or client.
+This is the feature that turns a risk score into something the business can
+actually *use* — not just look at.*
+
+
 ---
 
 ## 🚀 Features
@@ -88,7 +83,7 @@ the API docs — are in the **[full walkthrough](docs/WALKTHROUGH.md)**.
 - **Investment optimizer** — greedy-ratio knapsack algorithm that
   live-recalculates which fixes to prioritize under a budget slider, always
   surfacing free fixes first, with ROSI per recommendation
-- **Risk Copilot** — a plain-English chat layer so a non-technical owner can
+- **AI ChatBot** — a plain-English chat layer so a non-technical owner can
   ask "what's our highest financial risk today?" instead of reading a risk
   matrix; it only explains numbers the deterministic engine already
   computed, it never generates a score or a finding itself
