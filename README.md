@@ -1,4 +1,4 @@
-# RiskLens (OwLance)
+# OwLance
 
 **AI-Powered Continuous Cyber Risk Quantification and Investment Optimization Platform**
 SIH26105 · AICTE · Theme: Blockchain & Cybersecurity
@@ -19,7 +19,7 @@ Most cyber risk tools tell a business "Low / Medium / High" — which tells a CI
 or a small-business owner nothing about how much money is actually at stake.
 RiskLens gives budget-constrained organizations a transparent, auditable risk
 score benchmarked against real breach data, translated directly into rupee
-terms and a ranked, budget-aware action plan. The business also gets a
+terms and a ranked, investment optimisation plan . The business also gets a
 shareable Risk Passport it can hand to a bank or insurer to prove its
 security posture — without exposing what's still open.
 
@@ -69,12 +69,13 @@ actually *use* — not just look at.*
 
 - **Consent-first active scanning** — active checks run only after explicit,
   logged authorization; every scan action lands in a tamper-evident audit log
-- **Benchmark-driven risk scoring** — a 0–900 composite score and Expected
-  Annual Loss, calibrated to sector- and size-matched breach-cost benchmarks
-  rather than hand-tuned FAIR inputs
-- **Contextual vulnerability scoring** — CVSS + FIRST.org EPSS + CISA KEV,
-  plotted on an Impact × Likelihood risk matrix
-- **Causal risk graph** — an adaptive Threat → Vulnerability → Asset →
+- **Risk Score** — a 0–900 composite score and Expected Annual Loss,
+  calibrated to sector- and size-matched breach-cost benchmarks rather than
+  hand-tuned FAIR inputs
+- **Risk Matrix** — every finding plotted on an Impact × Likelihood grid,
+  with EPSS driving the likelihood axis, so it's clear at a glance which
+  issues are actually worth fixing first
+- **Causal risk graph & ROSI Calculation** — an adaptive Threat → Vulnerability → Asset →
   Identity → Control Gap → Business Service → Financial Loss chain that
   densifies as more data sources connect
 - **Investment optimizer** — greedy-ratio knapsack algorithm that
@@ -87,8 +88,8 @@ actually *use* — not just look at.*
 - **Risk Passport** — a shareable, hash-chained proof of security posture,
   owned by the business and deliverable straight to WhatsApp — our core
   differentiator, see above
-- **Passive-first discovery** — subdomain and asset discovery via Certificate
-  Transparency logs and DNS, with zero setup and no authorization required
+- **Compliance & Reports** — findings mapped onto NIST CSF, ISO 27001, CIS
+  Controls, RBI Guidelines, and SEBI CSCRF, backed by a tamper-evident audit log
 - **REST API** — full FastAPI backend with auto-generated Swagger/ReDoc docs
 
 ---
@@ -111,6 +112,7 @@ actually *use* — not just look at.*
    sparse (external-only) and fills in automatically as more data sources
    connect. There's no separate "SME version" and "enterprise version."
 
+---
 ---
 
 ## 📁 Project Structure
@@ -190,7 +192,22 @@ automatically if PostgreSQL isn't configured.
 - **FIRST.org EPSS**
 
 ---
+## 🧪 Testing
 
-## Team
+### Run the test suite
+```bash
+# Backend tests (pytest)
+cd backend
+pytest -q
 
-`[names here]`
+# Frontend tests (if any)
+cd src
+npm test
+```
+
+### Code quality checks
+- **Linting**: `ruff check .` (backend) and `npm run lint` (frontend)
+- **Formatting**: `ruff format .` and `prettier --write .`
+- **Type checking**: `mypy .` (backend) / `npm run type-check` (frontend)
+---
+
