@@ -7,9 +7,6 @@ SIH26105 · AICTE · Theme: Blockchain & Cybersecurity
 
 ## 🔗 Live Demo
 
-- **Frontend:** `[your Vercel URL]`
-- **Backend API docs:** `[your Render URL]/docs`
-
 *(First load on the deployed backend may take 30–60 seconds to wake up on the
 free tier — this is expected, not a bug.)*
 
