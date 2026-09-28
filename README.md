@@ -32,7 +32,7 @@ The business also gets a **Risk Passport**: a shareable, tamper-evident proof of
 | Risk expressed in **financial terms** | 0–900 score plus Expected Annual Loss with median / P90 / P99 range and a confidence score | Dashboard, Financial Exposure |
 | **Investment optimization** | Budget slider, greedy-ratio knapsack optimizer, ROSI per fix, free fixes first | Investment Optimizer |
 | **AI-powered** | EPSS exploit-probability model drives likelihood; an LLM Risk Copilot explains results in plain English | Risk Matrix, Risk Copilot |
-| **Blockchain** theme | Hash-chained, tamper-evident audit log and Risk Passport (see [Integrity layer](#integrity-layer-blockchain-style-hash-chain)) | Compliance & Reports, Risk Passport |
+| **Blockchain** theme | Hash-chained, tamper-evident audit log and Risk Passport | Compliance & Reports, Risk Passport |
 
 ---
 ## Built for both technical and non-technical users
