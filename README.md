@@ -35,6 +35,21 @@ The business also gets a **Risk Passport**: a shareable, tamper-evident proof of
 | **Blockchain** theme | Hash-chained, tamper-evident audit log and Risk Passport (see [Integrity layer](#integrity-layer-blockchain-style-hash-chain)) | Compliance & Reports, Risk Passport |
 
 ---
+## Built for both technical and non-technical users
+
+Cyber risk usually lives in a tool that only a security engineer can read, while the person who
+approves the budget never sees it. OwLance serves both with the **same deterministic engine**:
+the numbers never change between views, only the level of detail does.
+
+| | Non-technical owner / management | Security & IT team |
+|---|---|---|
+| **Goal** | "How much money is at risk and what should I spend?" | "What exactly is exposed and how do I fix it?" |
+| **Sees** | One 0-900 score, Expected Annual Loss in ₹, potential savings | Impact x Likelihood risk matrix, EPSS-driven likelihood, CVE data |
+| **Asks** | Ai Chatbot: "What is our highest financial risk today?" | Attack-Path Collapse: Threat > Vulnerability > Asset > Identity > Control Gap > Business Service > Financial Loss |
+| **Decides** | Drags the budget slider and sees which fixes are worth doing, free fixes first, with ROSI | Uses the ranked fix list, compliance mapping (NIST CSF, ISO 27001, CIS, RBI, SEBI CSCRF) and REST API |
+| **Shares** | Sends the Risk Passport to a bank, insurer or client over WhatsApp, with no dashboard login needed | Exports reports and audit logs, and integrates through the FastAPI Swagger/ReDoc docs |
+
+---
 
 ## What it looks like
 
