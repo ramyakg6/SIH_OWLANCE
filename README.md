@@ -6,11 +6,11 @@ Smart India Hackathon 2026 · **PS ID 26105** · AICTE (Cyber Security Cell) · 
 
 ---
 
-## The problem
+## The Problem
 
 Most cyber risk tools tell a business "Low / Medium / High". That tells a CISO or a small-business owner nothing about how much money is actually at stake, or where a limited security budget should go first.
 
-## Our solution
+## Our Solution
 
 OwLance turns technical security findings into **rupee-denominated risk** and a **ranked, budget-constrained investment plan**. It keeps monitoring continuously, so the numbers update as the organization's exposure changes.
 

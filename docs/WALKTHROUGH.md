@@ -1,4 +1,4 @@
-# RiskLens — Full Walkthrough
+# Owlance — Full Walkthrough
 
 ← [Back to README](../README.md)
 
@@ -119,7 +119,7 @@ score impact, **Annual Savings**, **Total Spend**, and **ROSI**. Tick any
 combination under *"What if we fixed these?"* to preview the effect before
 committing to it — nothing is saved or rescanned until you act on it.
 
-## 11. Compliance & Reports — and the Risk Copilot
+## 11. Compliance & Reports — and the Ai Chatbot
 
 ![Compliance & Reports, with Risk Copilot open](screenshots/14-compliance-reports-copilot.png)
 
@@ -135,7 +135,7 @@ and connected sources. It is not a claim of full certification."* Scroll
 down for the **Tamper-Evident Audit Log** — the record every consent and
 scan action was written to back in Step 3.
 
-This screen also shows **Risk Copilot**, open on the right — click the chat
+This screen also shows **Ai Chatbot**, open on the right — click the chat
 icon on any screen to bring it up. It's built for the person who isn't going
 to read a risk matrix: type a plain-English question like *"What is our
 highest financial risk today?"* and get a direct answer pulled from the
