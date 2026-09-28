@@ -17,7 +17,7 @@ OwLance turns technical security findings into **rupee-denominated risk** and a 
 ```
 Continuous scan → Findings → Risk score (0–900) → Financial exposure (₹) → Optimized investment plan → Shareable Risk Passport
 ```
-
+OwLance also ensures that both **technical and non-technical users** of the business can easily operate the platform.
 The business also gets a **Risk Passport**: a shareable, tamper-evident proof of its security posture that it can hand to a bank, insurer or client without exposing what is still open.
 
 📖 **[See the full step-by-step walkthrough with screenshots →](docs/WALKTHROUGH.md)**
