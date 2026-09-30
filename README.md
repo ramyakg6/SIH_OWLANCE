@@ -68,7 +68,7 @@ which fixes to prioritize, free fixes first.*
 ![Causal Risk Graph (Simulated)](docs/screenshots/10-causal-risk-graph-simulated.png)
 *Attack-Path Collapse: Threat → Vulnerability → Asset → Identity → Control Gap → Business Service → Financial Loss. The graph starts sparse on an external-only scan and fills in as more data sources connect.*
 
-## 🛡️ The Risk Passport — why RiskLens is different
+## 🛡️ The Risk Passport — why OwLance is different
 
 ![Risk Passport](docs/screenshots/08-risk-passport.png)
 *Most tools score a company secretly, for the vendor's own dashboard. The Risk
