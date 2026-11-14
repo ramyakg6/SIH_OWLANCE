@@ -243,10 +243,3 @@ npm test
 
 ---
 
-## 👤 Team
-
-`[FILL: team name, members and roles]`
-
-## 📄 License
-
-`[FILL: e.g. MIT]`
